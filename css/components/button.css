@@ -1,0 +1,30 @@
+.btn {
+    margin: 5px;
+    display: inline-block;
+    width: auto;
+    padding: 1em;
+    background-color: var(--secondary-color);
+    color: #fff;
+    font-size: 18px;
+    line-height: 1em;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 3em;
+    opacity: 0.85;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    box-shadow: 0 3px 6px #0003;
+    opacity: 1;
+}
+
+@media (max-width: 1000px) {
+    form {
+        grid-template-columns: 1fr;
+    }
+    form > .cell-2 {
+        grid-column: span 1;
+    }
+}
