@@ -9,7 +9,21 @@ form > .cell-1 {
 form > .cell-2 {
     grid-column: span 2;
 }
+form > div > label {
+    display: none;
+}
 form > div > input,
 form > div >textarea {
     width: 100%;
+    font-size: 18;
+    padding: 0.5em 0.1em;
+    line-height: 1.2em;
+    border: none;
+    border-bottom: 2px  solid #ccc;
+}
+
+form > div >textarea {
+    min-height: 4.8em;
+    max-height: 13em;
+    resize: vertical;
 }
