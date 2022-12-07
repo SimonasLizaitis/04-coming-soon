@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="./css/base/layout.css">
     <link rel="stylesheet" href="./css/3rd-party/font-awesome.min.css">
     <link rel="stylesheet" href="./css/components/clock.css">
+    <link rel="stylesheet" href="./css/components/form.css">
     <link rel="stylesheet" href="./css/components/mouse.css">
     <link rel="stylesheet" href="./css/components/progress-bar.css">
     <link rel="stylesheet" href="./css/pages/home.css">
@@ -63,7 +64,7 @@
                             <div class="value">90%</div>
                         </div>
                         <div class="progress">
-                            <div class="bar bar-1"></div>
+                            <div class="bar " style="--w: 90%;"></div>
                         </div>
                     </div>
                     <div class="progress-bar">
@@ -72,7 +73,7 @@
                             <div class="value">80%</div>
                         </div>
                         <div  class="progress">
-                            <div class="bar bar-2"></div>
+                            <div class="bar" style="--w: 80%;"></div>
                         </div>
                     </div>
                     <div class="progress-bar">
@@ -81,7 +82,7 @@
                             <div class="value">50%</div>
                         </div>
                         <div class="progress">
-                            <div class="bar bar-3"></div>
+                            <div class="bar" style="--w: 50%;"></div>
                         </div>
                     </div>
                 </div>
@@ -89,6 +90,23 @@
             <div class="column right">
                 <H2 class="section-title">Have any questions?</H2>
                 <p class="section-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, quas incidunt aut hic deleniti<a href="mailto:vardenis@pastenis.lt">vardenis@pastenis.lt</a> iusto quasi nemo, ab asperiores omnis, reprehenderit repellat nam vel molestiae earum. Rerum nostrum voluptas delectus.</p>
+                <form action="/">
+                    <div class="cell-1">
+                        <label for="">Name</label>
+                        <input type="text">
+                    </div>
+                    <div class="cell-1">
+                        <label for="">Email</label>
+                        <input type="text">
+                    </div>
+                    <div class="cell-2">
+                        <label for="">Message</label>
+                        <textarea name="" id=""></textarea>
+                    </div>
+                    <div class="cell-2">
+                        <button>Send message</button>
+                    </div>
+                </form>
             </div>
         </div>
     </section>

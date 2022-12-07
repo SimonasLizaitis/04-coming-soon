@@ -21,15 +21,19 @@
     background-color: #ccc;
 }
 .progress-bar-list .progress > .bar {
+    --w: 90;
     height: 100%;
+    width: var(--w);
     background-color: var(--main-color);
+    animation-duration: 2s;
+    animation-name: loading;
 }
-.progress-bar-list .progress > .bar-1 {
-    width: 90%;
-}
-.progress-bar-list .progress > .bar-2 {
-    width: 80%;
-}
-.progress-bar-list .progress > .bar-3 {
-    width: 50%;
+
+@keyframes loading {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: var(--w);
+    }
 }
